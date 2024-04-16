@@ -1,0 +1,49 @@
+/*Selector {
+    Property: value;
+}*/
+* {
+    text-align: center;
+}
+
+header {
+    color: #B8A4D2;
+}
+
+body {
+    background-color: #403C45;
+    background-size: cover;
+}
+
+
+h2,
+p {
+    color: #E4D1FE;
+    text-align: center;
+    border: 5px solid #B8A4D2;
+}
+
+p {
+    color: #B8A4D2;
+    font-family: "Ubuntu",
+        sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext {
+    border: 5px dashed #756689;
+}
+
+.active {
+    color: #403C45;
+}
+
+#div1 {
+    background-color: #756689;
+}
