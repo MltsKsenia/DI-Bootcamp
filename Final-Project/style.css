@@ -18,7 +18,7 @@ body {
 }
 
 .top-banner {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -32,6 +32,7 @@ body {
     font-weight: bolder;
     box-shadow: 4px 4px 5px rgba(19, 19, 19, 0.66);
     text-align: right;
+    margin: 10px 5px;
 }
 
 a {
@@ -45,8 +46,6 @@ a {
     text-shadow: 2px 2px 4px #B9A0DA;
     font-family: gothic-a1-bold;
     font-size: large;
-    text-align: left;
-    margin-right: 70%;
 }
 
 .video-container {
@@ -226,9 +225,15 @@ b {
         width: auto;
     }
 
-    .top-banner,
-    #title {
+    .top-banner {
+        text-align: right;
         font-size: 0.75em;
+        height: auto;
+        width: auto;
+    }
+
+    #title {
+        font-size: 15px;
         height: auto;
         width: auto;
     }
@@ -249,8 +254,19 @@ b {
         margin-right: 15%;
     }
 
+
+    .responsive-image-footer {
+        max-width: 50px;
+        height: auto;
+        width: auto;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+
     #image-float {
-        height: 20em;
+        max-width: 70px;
+        height: auto;
+        width: auto;
         margin: 5px 5px;
     }
 
