@@ -1,0 +1,257 @@
+body {
+    background-color: #1F1F1F;
+    text-align: center;
+}
+
+
+
+.gothic-a1-medium {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.gothic-a1-bold {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3221489a;
+    color: #725F8B;
+    padding: 10px;
+    z-index: 1000;
+    font-family: gothic-a1-bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    box-shadow: 4px 4px 5px rgba(19, 19, 19, 0.66);
+    text-align: right;
+}
+
+a {
+    font-family: gothic-a1-bold;
+    font-weight: bold;
+    color: #B9A0DA;
+}
+
+#title {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #B9A0DA;
+    font-family: gothic-a1-bold;
+    font-size: large;
+    text-align: left;
+    margin-right: 70%;
+}
+
+.video-container {
+    position: relative;
+    text-align: center;
+}
+
+.main-image-overlay {
+    text-shadow: 2px 2px 4px #342942;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    transition: all 4s;
+}
+
+.main-responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-responsive-video {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.video-button-container {
+    display: inline-block;
+    padding: auto;
+    margin: 5px 5px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+    position: relative;
+    transition: all 1s;
+}
+
+.video-button-container:hover {
+    transform: scale(1.1);
+}
+
+.text-overlay-active {
+    text-shadow: 2px 2px 4px #B9A0DA;
+    font-family: Gothic-a1-bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    background-color: #34294294;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+#image1 {
+    background-image: url(media/png1.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 400px;
+    width: auto;
+    margin-left: 10px;
+}
+
+#section1,
+#section2,
+#section5 {
+    position: static;
+    color: #B9A0DA;
+    text-align: right;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5px;
+}
+
+
+#section3,
+#section4,
+#section6 {
+    color: #B9A0DA;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5px;
+}
+
+h1 {
+    background-color: #4e425d97;
+}
+
+h1,
+h2 {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #B9A0DA;
+    padding: 5px;
+}
+
+table {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #B9A0DA;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    background-color: #1f1f1f99;
+    padding: 0;
+}
+
+td,
+th {
+    border: 1px solid #725F8B;
+    padding: 8px;
+}
+
+
+.responsive-image-footer {
+    max-width: 250px;
+    height: auto;
+    width: auto;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.responsive-video {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.image-overlay {
+    text-shadow: 2px 2px 4px #342942;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    transition: all 4s;
+}
+
+#image-float {
+    max-width: 327px;
+    float: left;
+    height: auto;
+    width: auto;
+    margin: 5px 5px;
+}
+
+b {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #B9A0DA;
+
+}
+
+
+@media screen and (max-width: 653px) {
+    .video-button-container {
+        width: 75px;
+        height: auto;
+    }
+
+    .text-overlay-active {
+        font-size: 0.70em;
+    }
+
+    .main-image-overlay {
+        height: auto;
+        width: auto;
+    }
+
+    .top-banner,
+    #title {
+        font-size: 0.75em;
+        height: auto;
+        width: auto;
+    }
+
+    #section1,
+    #section2,
+    #section3,
+    #section5 {
+        font-size: 0.5em;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #section4,
+    #section6 {
+        font-size: 0.5em;
+        margin-left: 5%;
+        margin-right: 15%;
+    }
+
+    #image-float {
+        height: 20em;
+        margin: 5px 5px;
+    }
+
+}
