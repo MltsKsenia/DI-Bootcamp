@@ -95,7 +95,7 @@ img {
     border: 2px solid lightgray;
     font-weight: bold;
     color: lightgray;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 
@@ -111,6 +111,57 @@ section ul li {
     border-radius: 5px;
     padding: 5px;
     display: none;
+    transform: scale(1.1);
+}
+
+.icons button {
+    background-color: white;
+    padding: 5px;
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#eye,
+#heart,
+#minicart {
+    color: #000000;
+}
+
+#eye:hover {
+    color: white;
+    background-color: rgb(43, 121, 97);
+    border-color: rgb(43, 121, 97);
+}
+
+#heart:hover {
+    color: white;
+    background-color: rgb(43, 121, 97);
+    border-color: rgb(43, 121, 97);
+}
+
+#minicart:hover {
+    color: white;
+    background-color: rgb(43, 121, 97);
+    border-color: rgb(43, 121, 97);
+}
+
+#eye:active {
+    color: white;
+    background-color: rgb(26, 71, 57);
+    border-color: rgb(26, 71, 57);
+}
+
+#heart:active {
+    color: white;
+    background-color: rgb(26, 71, 57);
+    border-color: rgb(26, 71, 57);
+}
+
+#minicart:active {
+    color: white;
+    background-color: rgb(26, 71, 57);
+    border-color: rgb(26, 71, 57);
 }
 
 li:hover {
@@ -121,14 +172,14 @@ li:hover {
     }
 
     #cart {
-        background-color: rgb(141, 220, 141);
-        border-color: rgb(141, 220, 141);
+        background-color: rgb(43, 121, 97);
+        border-color: rgb(43, 121, 97);
         color: white;
     }
 
     #cart:active {
-        background-color: rgb(82, 136, 82);
-        border: 2px solid rgb(82, 136, 82);
-        color: rgb(141, 220, 141);
+        background-color: rgb(26, 71, 57);
+        border: 2px solid rgb(26, 71, 57);
+        color: white;
     }
 }
