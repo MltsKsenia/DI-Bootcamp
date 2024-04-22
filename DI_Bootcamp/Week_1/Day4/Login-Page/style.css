@@ -1,0 +1,91 @@
+html,
+body {
+    width: 99vw;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: quicksand;
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav {
+    background-color: #FAFAFA;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+}
+
+nav h1 {
+    text-align: center;
+}
+
+nav input {
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    border: 2px solid #EEEEEE;
+    padding: 2px;
+    margin: 2px;
+}
+
+nav button {
+    padding: 5px 15px;
+    background-color: #9C27B0;
+    border: 2px solid white;
+    color: white;
+}
+
+nav button:active {
+    background-color: rgb(86, 21, 97);
+    border: 2px solid white;
+    color: white;
+}
+
+nav div {
+    text-align: center;
+}
+
+a i {
+    color: #B1B1B1;
+}
+
+footer {
+    background-image: url(1.png);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+}
+
+footer button {
+    margin-left: 12.5%;
+    border-radius: 25px;
+    border: 2px solid #EEEEEE;
+    width: 15%;
+    height: 5%;
+    text-align: center;
+    background: none;
+    color: white;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+footer button:active {
+    background-color: rgb(86, 21, 97);
+    border-color: #9C27B0;
+}
