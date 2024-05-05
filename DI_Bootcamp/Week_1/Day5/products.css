@@ -183,3 +183,38 @@ li:hover {
         color: white;
     }
 }
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 8px;
+    background-color: white;
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.icon {
+    padding-left: 0px;
+}
+
+.icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
