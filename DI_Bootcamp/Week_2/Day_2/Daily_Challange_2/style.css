@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec1 {
+    padding: 2px;
+    border: 3px solid black;
+    margin: 2px;
+    width: 40vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.sec1 div:nth-child(3n) {
+    background-color: #A84A00;
+}
+
+.sec1 div:nth-child(3n-1) {
+    background-color: #FFB26D;
+}
+
+.sec1 div:nth-child(3n-2) {
+    background-color: #FF7100;
+}
+
+.sec2 {
+    padding: 2px;
+    border: 3px solid black;
+    margin: 2px;
+    width: 40vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.sec2 div:nth-child(4n) {
+    background-color: #333333;
+}
+
+.sec2 div:nth-child(4n-1) {
+    background-color: #666666;
+}
+
+.sec2 div:nth-child(4n-2) {
+    background-color: #999999;
+}
+
+.sec2 div:nth-child(4n-3) {
+    background-color: #CCCCCC;
+}
+
+.sec3 {
+    padding: 2px;
+    border: 3px solid black;
+    margin: 2px;
+    width: 40vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.sec3 div {
+    background-color: #d83e3b9c;
+}
+
+#div1 {
+    grid-column: 2/3;
+    grid-row: 1/17;
+}
+
+#div2 {
+    grid-column: 4/5;
+    grid-row: 1/17;
+}
+
+#div3 {
+    grid-column: 6/7;
+    grid-row: 1/17;
+}
+
+#div4 {
+    grid-column: 8/9;
+    grid-row: 1/17;
+}
+
+#div5 {
+    grid-column: 10/11;
+    grid-row: 1/17;
+}
+
+#div6 {
+    grid-column: 12/13;
+    grid-row: 1/17;
+}
+
+#div7 {
+    grid-column: 14/15;
+    grid-row: 1/17;
+}
+
+#div8 {
+    grid-column: 16/17;
+    grid-row: 1/17;
+}
+
+#div9 {
+    grid-column: 1/17;
+    grid-row: 2/3;
+}
+
+#div10 {
+    grid-column: 1/17;
+    grid-row: 4/5;
+}
+
+#div11 {
+    grid-column: 1/17;
+    grid-row: 6/7;
+}
+
+#div12 {
+    grid-column: 1/17;
+    grid-row: 8/9;
+}
+
+#div13 {
+    grid-column: 1/17;
+    grid-row: 10/11;
+}
+
+#div14 {
+    grid-column: 1/17;
+    grid-row: 12/13;
+}
+
+#div15 {
+    grid-column: 1/17;
+    grid-row: 14/15;
+}
+
+#div16 {
+    grid-column: 1/17;
+    grid-row: 16/17;
+}
