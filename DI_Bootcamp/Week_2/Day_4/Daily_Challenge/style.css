@@ -1,0 +1,29 @@
+section {
+    margin: 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+section div {
+    margin: 10px
+}
+
+.row {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 80%;
+    padding: 5px;
+}
+
+.row .mid {
+    border: none;
+}
+
+img {
+    height: 100px;
+    margin: 10px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+}

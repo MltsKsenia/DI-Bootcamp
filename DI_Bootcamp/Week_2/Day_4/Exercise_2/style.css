@@ -1,0 +1,43 @@
+body {
+    padding-bottom: 20px;
+
+}
+
+.background {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-position: start center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+form {
+    height: 35px;
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+form input {
+    margin: 0 10px;
+}
+
+form button {
+    margin: 0 10px;
+    height: 35px;
+    flex-flow: row nowrap;
+}
+
+main section {
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+main section .row {
+    margin-bottom: 100px;
+}
