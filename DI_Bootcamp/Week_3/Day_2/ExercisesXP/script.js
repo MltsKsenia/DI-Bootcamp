@@ -19,7 +19,9 @@ console.log(series)
 myWatchedSeries[2] = "friends";
 myWatchedSeries.push("the crown")
 myWatchedSeries.splice(0, 1, "how i met your mother")
-console.log(myWatchedSeries[1])
+let moneyhaist = myWatchedSeries[1]
+let letter = moneyhaist[2]
+console.log(letter);
 console.log(myWatchedSeries)
 
 
