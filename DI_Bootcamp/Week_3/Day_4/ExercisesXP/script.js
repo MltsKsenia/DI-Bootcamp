@@ -26,12 +26,12 @@ else if (newDog != "Chihuahua") {
 
 // Exercise 3 //Even Or Odd
 let userInput = prompt("Please enter a numner for exercise 3");
-x = Number(userInput);
-if (x % 2 === 0) {
-    console.log(x + " is an even number");
+num = Number(userInput);
+if (num % 2 === 0) {
+    console.log(num + " is an even number");
 }
 else {
-    console.log(x + " is an odd number");
+    console.log(num + " is an odd number");
 }
 
 // Exercise 4 //Group Chat
