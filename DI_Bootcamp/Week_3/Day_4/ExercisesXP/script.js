@@ -8,6 +8,9 @@ if (x > y) {
 else if (y > x) {
     console.log("y is the biggest number")
 }
+else if (x === y) {
+    console.log("x is equals y")
+}
 
 // Exercise 2 //Chihuahua
 let newDog = "Chihuahua";
@@ -19,6 +22,16 @@ if (newDog === "Chihuahua") {
 }
 else if (newDog != "Chihuahua") {
     console.log("I dont care, I prefer cats")
+}
+
+// Exercise 3 //Even Or Odd
+let userInput = prompt("Please enter a numner for exercise 3");
+x = Number(userInput);
+if (x % 2 === 0) {
+    console.log(x + " is an even number");
+}
+else {
+    console.log(x + " is an odd number");
 }
 
 // Exercise 4 //Group Chat
