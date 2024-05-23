@@ -53,26 +53,26 @@ console.log(' '); // I added a space to separate the exercises
 
 
 /// Exercise 3 // Repeat The Question
-// let num;
-// do {
-//     num = prompt("Please enter the number for the 3rd exercise");
-//     num = Number(num)
+let num;
+do {
+    num = prompt("Please enter the number for the 3rd exercise");
+    num = Number(num)
 
-//     if (typeof num === "number" && !isNaN(num)) {
-//         if (num >= 10) {
-//             alert("The number is greater or equal to 10. Thank You!");
-//             break;
-//         }
-//         else if (num < 10) {
-//             alert("The number is less than 10. Please try again.");
-//             num = null;
-//         }
-//     }
-//     else if (num != Number) {
-//         alert("That is not a valid number. Please write a number.");
-//         num = null;
-//     }
-// } while (num === null || num < 10);
+    if (typeof num === "number" && !isNaN(num)) {
+        if (num >= 10) {
+            alert("The number is greater or equal to 10. Thank You!");
+            break;
+        }
+        else if (num < 10) {
+            alert("The number is less than 10. Please try again.");
+            num = null;
+        }
+    }
+    else if (num != Number) {
+        alert("That is not a valid number. Please write a number.");
+        num = null;
+    }
+} while (num === null || num < 10);
 
 
 /// Exercise 4 // Building Management
@@ -135,6 +135,7 @@ sen = sen.trim(); //deleted the last space in the sentence
 console.log(sen);
 
 console.log(' '); // I added a space to separate the exercises
+
 
 /// Exercise 7 // Secret Group
 const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
