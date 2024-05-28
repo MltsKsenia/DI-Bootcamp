@@ -30,6 +30,7 @@ const headerImage = document.createElement('th');
 headerImage.textContent = 'Image';
 
 headerRow.appendChild(headerTitle);
+headerRow.appendChild(headerAlreadyRead);
 headerRow.appendChild(headerAuthor);
 headerRow.appendChild(headerImage);
 table.appendChild(headerRow);
