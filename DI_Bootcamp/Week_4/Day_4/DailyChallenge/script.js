@@ -11,7 +11,8 @@ const planets = [
 
 const listPlanets = document.querySelector('.listPlanets');
 
-planets.forEach(planet => {
+for (let i = 0; i < planets.length; i++) {
+    const planet = planets[i];
     const planetDiv = document.createElement('div');
     planetDiv.classList.add('planet');
     planetDiv.style.backgroundColor = planet.color;
@@ -20,14 +21,15 @@ planets.forEach(planet => {
 
     listPlanets.appendChild(planetDiv);
 
-    planet.moons.forEach((moon, index) => {
+    for (let j = 0; j < planet.moons.length; j++) {
+        const moon = planet.moons[j];
         const moonDiv = document.createElement('div');
         moonDiv.classList.add('moon');
-        moonDiv.style.left = `${100 + (index * 80)}px`;
+        moonDiv.style.left = `${100 + (j * 80)}px`;
         moonDiv.textContent = moon;
         moonDiv.style.padding = '15px';
         moonDiv.style.marginLeft = '40px';
         moonDiv.style.textAlign = 'center';
         planetDiv.appendChild(moonDiv);
-    });
-});
+    };
+};
