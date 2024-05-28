@@ -1,7 +1,7 @@
 /// Exercise 1 // Information
 // Part 1
 function infoAboutMe() {
-    console.log("My name is Ksenia, I'm 28 years old, my favorit color is purple, and my hobbies are gaming, anime and coding.");
+    console.log("My name is Ksenia, I'm 28 years old, my favorite color is purple, and my hobbies are gaming, anime and coding.");
 }
 infoAboutMe()
 
