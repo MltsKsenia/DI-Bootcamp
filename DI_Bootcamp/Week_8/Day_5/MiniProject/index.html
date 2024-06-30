@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Quote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quoteDisplay">Press "Generate Quote" to see a quote!</div>
+    <button id="generate" onclick="generateQuote()">Generate Quote</button>
+    <div id="navButtons"><button onclick="showPreviousQuote()">Previous</button>
+        <button onclick="showNextQuote()">Next</button>
+    </div>
+    <div class="buttons">
+        <button id="likeCount" onclick="likeQuote()">♥ Like</button>
+        <button onclick="showCharacterCount(true)">Character Count (with spaces)</button>
+        <button onclick="showCharacterCount(false)">Character Count (without spaces)</button>
+        <button onclick="showWordCount()">Word Count</button>
+    </div>
+    <form id="filterForm" onsubmit="filterQuotes(event)">
+        <input type="text" id="filterID" placeholder="number (1/13)" required>
+        <button type="submit">Search</button>
+    </form>
+
+
+    <form id="quoteForm" onsubmit="addQuote(event)">
+        <input type="text" id="newQuote" placeholder="Quote" required>
+        <input type="text" id="newAuthor" placeholder="Author" required>
+        <button type="submit">Add Quote</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
