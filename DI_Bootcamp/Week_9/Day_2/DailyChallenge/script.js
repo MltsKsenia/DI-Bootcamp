@@ -10,11 +10,25 @@ class Video {
     }
 }
 
-
-// First Video instance
 let video1 = new Video("JavaScript Tutorial", "John Doe", 300);
-video1.watch();  // Output: John Doe watched all 300 seconds of JavaScript Tutorial!
+video1.watch();
 
-// Second Video instance
 let video2 = new Video("Cooking with Amy", "Amy Smith", 600);
-video2.watch();  // Output: Amy Smith watched all 600 seconds of Cooking with Amy!
+video2.watch();
+
+let videosData = [
+    { title: "JavaScript Basics", uploader: "Alice", time: 200 },
+    { title: "Advanced CSS", uploader: "Bob", time: 400 },
+    { title: "Python for Beginners", uploader: "Charlie", time: 350 },
+    { title: "React Tutorial", uploader: "David", time: 500 },
+    { title: "Machine Learning 101", uploader: "Eve", time: 600 }
+];
+
+let videos = [];
+
+for (let data of videosData) {
+    let video = new Video(data.title, data.uploader, data.time);
+    videos.push(video);
+}
+
+videos.forEach(video => video.watch());
