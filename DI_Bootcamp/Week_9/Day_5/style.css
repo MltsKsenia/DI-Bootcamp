@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('circuit-pattern.png');
+    background-color: #4c4192;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #6ADF82;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #303952;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#searchBox {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.robot-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.robot-card {
+    background: url('card-pattern.png') no-repeat center center;
+    background-color: #1f9195;
+    background-size: cover;
+    border: 2px solid #4FC1C5;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: left;
+    font-size: small;
+    color: #303952;
+}
+
+.robot-card img {
+    background-color: #303952;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.robot-card h2 {
+    margin: 10px 0;
+}
+
+.robot-card p {
+    margin: 5px 0;
+}
