@@ -1,0 +1,10 @@
+.card {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+}
+.card img {
+  width: 150px;
+}
