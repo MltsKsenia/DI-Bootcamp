@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge Chonverter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/free-vector/dollar-bill-pattern-background-wallpaper-money-vector-finance-illustration_53876-136819.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .converter {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+        }
+
+        .converter button {
+            margin: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="converter">
+        <h1>Currency Converter</h1>
+        <label for="from">From:</label>
+        <select id="from"></select>
+        <label for="to">To:</label>
+        <select id="to"></select>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" value="1">
+        <button onclick="convert()">Convert</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
