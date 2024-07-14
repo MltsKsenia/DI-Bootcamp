@@ -16,7 +16,6 @@
 // fetchGifs();
 
 //Exercise 2
-// Replace 'YOUR_API_KEY' with your actual Giphy API key
 // const apiKey = 'rywcP7ZyLadygFzL7YsS88dWcUwoHeAm';
 // const searchQuery = 'sun';
 // const limit = 10;
