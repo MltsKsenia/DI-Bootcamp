@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge Emoji</title>
+</head>
+
+<body>
+    <h1>Emoji Guessing Game</h1>
+    <div id="game">
+        <div id="emoji"></div>
+        <form id="guess-form">
+            <input type="text" id="guess-input" name="guess" placeholder="Enter your guess">
+            <button type="submit">Make Guess</button>
+        </form>
+        <div id="feedback"></div>
+        <div id="score"></div>
+    </div>
+    <script>
+        async function getEmoji() {
+            try {
+                const response = await fetch('http://localhost:3000/emoji');
+                if (!response.ok) throw new Error('Network response was not ok');
+                const data = await response.json();
+                document.getElementById('emoji').textContent = data.emoji;
+            } catch (error) {
+                console.error('Fetch error:', error);
+            }
+        }
+
+        async function submitGuess(event) {
+            event.preventDefault();
+            const guess = document.getElementById('guess-input').value.toLowerCase();
+            const emoji = document.getElementById('emoji').textContent;
+            try {
+                const response = await fetch('http://localhost:3000/guess', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ emoji, guess })
+                });
+                if (!response.ok) throw new Error('Network response was not ok');
+                const data = await response.json();
+                document.getElementById('feedback').textContent = data.correct ? 'Correct!' : 'Wrong!';
+                document.getElementById('score').textContent = `Score: ${data.score}`;
+                document.getElementById('guess-input').value = '';
+                getEmoji();
+            } catch (error) {
+                console.error('Fetch error:', error);
+            }
+        }
+
+        document.getElementById('guess-form').addEventListener('submit', submitGuess);
+        getEmoji();
+    </script>
+    </script>
+</body>
+
+</html>
