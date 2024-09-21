@@ -1,0 +1,45 @@
+body {
+  background-color: bisque;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+li.list-item label {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+li.list-item button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+li.list-item button:hover {
+  background-color: darkred;
+}
